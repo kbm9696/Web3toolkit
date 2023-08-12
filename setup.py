@@ -9,6 +9,7 @@ setup(
     long_description=open('README.md').read(),
     install_requires=[
         'requests',
+        'url',
     ],
     url='https://github.com/kbm9696/Web3toolkit',
     author='Balamurugan',
