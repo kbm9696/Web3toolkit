@@ -17,7 +17,7 @@ class NFTApis:
                  no_nft_asset_metadata: bool = False,
                  with_uncached: bool = False):
         auth = HTTPBasicAuth(self.api_key, '')
-        url = self.base_url + f'/address/{wallet_address}/balances_nft'
+        url = self.base_url + f'/address/{wallet_address}/balances_nft/'
         url += f'?no-spam={no_spam}&no-nft-asset-metadata={no_nft_asset_metadata}' \
                f'&with-uncached={with_uncached}'
         response = requests.get(url, auth=auth, headers=Headers)
@@ -73,7 +73,7 @@ class NFTApis:
 
     def get_attributes_for_traits(self, collection_contract: str, trait: str):
         auth = HTTPBasicAuth(self.api_key, '')
-        url = self.base_url + f'/nft/{collection_contract}/traits/{trait}/attributes'
+        url = self.base_url + f'/nft/{collection_contract}/traits/{trait}/attributes/'
         response = requests.get(url, auth=auth, headers=Headers)
         return response.json()
 

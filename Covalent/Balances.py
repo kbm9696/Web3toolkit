@@ -62,7 +62,7 @@ class BalancesApi:
                                  starting_block: int = 0,
                                  ending_block: int = 0):
         auth = HTTPBasicAuth(self.api_key, '')
-        url = self.url + f'transfers_v2/?contract-address={contract_address}'
+        url = self.url + f'transfers_v2/?contract-address={contract_address}/'
         if starting_block != 0:
             url += f'&starting-block={starting_block}&ending-block={ending_block}'
         if len(quote_currency):
