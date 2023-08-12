@@ -1,5 +1,5 @@
 #import requests
-from url import run_query
+from Zora.url import run_query
 
 
 query = '''
