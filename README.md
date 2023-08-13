@@ -111,10 +111,12 @@ SDK do support remaining tokens, smart_contracts and othere functions too, here 
 The Covalent Unified API can be used to pull token balances, positions and historical granular transaction data from dozens of blockchain networks. This data enables hundreds of end-user use-cases like wallets, investor dashboards, taxation tools and as-of-yet unknown use-cases.
 
 ```
+
 from Covalent.NFT import NFTApis
 nft_api = NFTApis(chain_name='eth-mainnet',api_key='key')
 r = nft_api.get_nfts(wallet_address='0xb21EE5647436adCd3D2b8FF5D077Af42269597DE')
 print(r)
+
 ```
 
 help() function that describe the avilable functions and there parameters in detailed way.
