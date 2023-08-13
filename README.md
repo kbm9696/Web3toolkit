@@ -112,6 +112,16 @@ The Covalent Unified API can be used to pull token balances, positions and histo
 
 ```
 
+from Covalent.NFT import NFTApis
+nft_api = NFTApis(chain_name='eth-mainnet',api_key='key')
+r = nft_api.get_nfts(wallet_address='0xb21EE5647436adCd3D2b8FF5D077Af42269597DE')
+print(r)
+
+```
+
+help() function that describe the avilable functions and there parameters in detailed way.
+
+( EXAMPLE CALLS )
 
 
 
