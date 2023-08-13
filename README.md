@@ -41,3 +41,32 @@ In summary, the "Web3Toolkit" addresses the challenges posed by the increasing n
 ## PIP PACKAGE
 
 ```!pip install Web3toolkit==1.0.4```
+
+## ZORA PROTOCOL
+
+Zora is a decentralized protocol where anyone can permissionlessly buy, sell, and create. We've created a series of tools that makes it easy to get started building.
+
+Here the Web3toolkit ZORA PROTOCOL SDK ( EXAMPLE CALLS )
+```
+
+from Zora import sales, mints, help
+mints = mints.mints_query_results('0xaa697E815F85Dd8C46b14EddfCB07f4A351d25BB',3,'PRICE')
+print(mints)
+
+```
+help() function that describe the avilable functions and there parameters in detailed way.
+
+( EXAMPLE CALLS )
+```
+mints.mints_query_results('0xaa697E815F85Dd8C46b14EddfCB07f4A351d25BB',3,'PRICE')
+sales.sales_query_results('0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258',3,'OPENSEA_BUNDLE_SALE','TIME')
+search.search_query_results('punk',10)
+collection_metadata.collection_query_results("0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258")
+events.events_query_results('0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258','91371','V3_RESERVE_AUCTION_EVENT', 5)
+tokens.token_query_extract('0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258','60809')
+agg_att.agg_att_query_results('0x60e4d786628fea6478f785a6d7e704777c86a7c6','7077')
+agg_stats.agg_stats_query_results('0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb', 5)
+off_chain.off_chain_query_results('0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258')
+```
+
+
