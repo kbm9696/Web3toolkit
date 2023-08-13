@@ -16,9 +16,9 @@ def get_covalent_helper():
         }
 
         for name, obj in inspect.getmembers(module):
-            if inspect.isfunction(obj):
+            if inspect.isfunction(obj) and inspect.getmodule(obj) == module:
                 module_info["functions_names"].append(name)
-            elif inspect.isclass(obj):
+            elif inspect.isclass(obj) and inspect.getmodule(obj) == module:
                 class_info = {"methods": []}
 
                 for class_name, class_obj in inspect.getmembers(obj):
