@@ -124,7 +124,23 @@ help() function that describe the avilable functions and there parameters in det
 
 ( EXAMPLE CALLS )
 
+```
+from Covalent.NFT import NFTApis
+from Covalent.Balances import BalancesApi
+from Covalent.Transactions import TransactionsApi
+nft_api = NFTApis(chain_name='eth-mainnet',api_key='key')
+balance_api = BalancesApi(chain_name='eth-mainnet',wallet_address='0xb21EE5647436adCd3D2b8FF5D077Af42269597DE',api_key='xxxxx')
+transactions_api = TransactionsApi(chain_name='eth-mainnet',api_key='key')
+r = nft_api.get_nfts(wallet_address='0xb21EE5647436adCd3D2b8FF5D077Af42269597DE')
+r = transactions_api(tx_hash='IJD1234JHG88')
+res = balance_api.get_token_balance(quote_currency='USD')
+res = balance_api.get_historical_token_balance()
+res = balance_api.get_ERC20_token_transfers(contract_address='0xb21EE5647436adCd3D2b8FF5D077Af422695976A')
+res1 = balance_api.get_historical_portfolio()
+res3 = balance_api.get_historical_token_balance()
 
+```
+SDK do support remaining tokens, smart_contracts and othere functions too, here listed some sample calls only.
 
 
 
