@@ -3,7 +3,7 @@ import inspect
 import pkgutil
 
 
-def get_functions_and_classes():
+def get_zora_helper():
     package_name = 'Zora'
     module_contents = {}
     package = importlib.import_module(package_name)

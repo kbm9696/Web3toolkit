@@ -3,7 +3,7 @@ import inspect
 import pkgutil
 
 
-def get_functions_and_classes():
+def get_covalent_helper():
     package_name = 'Covalent'
     module_contents = {}
     package = importlib.import_module(package_name)
