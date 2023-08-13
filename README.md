@@ -67,6 +67,53 @@ tokens.token_query_extract('0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258','60809')
 agg_att.agg_att_query_results('0x60e4d786628fea6478f785a6d7e704777c86a7c6','7077')
 agg_stats.agg_stats_query_results('0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb', 5)
 off_chain.off_chain_query_results('0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258')
+
 ```
+SDK do support remaining functions too, here listed some sample calls only.
+
+
+## MODE
+
+Mode is an OP Stack L2 designed for growth that incentivises and directly rewards developers, users and protocols to grow Mode and the Superchain ecosystem.
+
+Currently our SDK support thr testnet of mode protocol
+```
+from mode import testnet, help
+mode = testnet.transactions_hash('0x9541a6141d48a9246e348ba0243dd445c27b7318a9c7ccff6e17d8f8fc6144d3')
+print(mode)
+
+```
+help() function that describe the avilable functions and there parameters in detailed way.
+
+( EXAMPLE CALLS )
+
+```
+testnet.search("USDT")
+testnet.search_direct("USDT")
+testnet.main_page_transactions()
+testnet.main_page_blocks()
+testnet.stats()
+testnet.stats_transactions()
+testnet.stats_market()
+testnet.transactions_hash('0x9541a6141d48a9246e348ba0243dd445c27b7318a9c7ccff6e17d8f8fc6144d3')
+testnet.transactions_hash_token('0x8697358674d9ac6f4110cda06c2017d872104e330e0d6b713ca1a33a7b62899a','ERC-20')
+testnet.transactions_hash_logs('0x8697358674d9ac6f4110cda06c2017d872104e330e0d6b713ca1a33a7b62899a')
+testnet.transactions_hash_internal_trans('0x8697358674d9ac6f4110cda06c2017d872104e330e0d6b713ca1a33a7b62899a')
+testnet.addresses()
+testnet.address_hash('0xCBe416312599816b9f897AfC6DDF69C9127bB2D0')
+
+```
+SDK do support remaining tokens, smart_contracts and othere functions too, here listed some sample calls only.
+
+
+## Covalent
+
+The Covalent Unified API can be used to pull token balances, positions and historical granular transaction data from dozens of blockchain networks. This data enables hundreds of end-user use-cases like wallets, investor dashboards, taxation tools and as-of-yet unknown use-cases.
+
+```
+
+
+
+
 
 
