@@ -41,7 +41,7 @@ In summary, the "Web3Toolkit" addresses the challenges posed by the increasing n
 
 ## PIP PACKAGE
 
-```!pip install Web3toolskit==1.0.0```
+```!pip install Web3toolskit==1.0.1```
 
 ## ZORA PROTOCOL
 
